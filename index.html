@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Cards with Bootstrap</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row" id="cards-container">
+            <!-- Cards will be inserted here -->
+        </div>
+    </div>
+
+    <script>
+        function showData() {
+            return new Promise(function(resolve, reject) {
+                fetch('https://freetestapi.com/api/v1/books')
+                    .then(function(res) {
+                        return res.json();
+                    })
+                    .then(function(res) {
+                        resolve(res);
+                    })
+                    .catch(function(err) {
+                        reject(err);
+                    });
+            });
+        }
+
+        showData()
+            .then(function(products) {
+                const cardsContainer = document.getElementById('cards-container');
+                cardsContainer.innerHTML = ''; // Clear the container
+                products.forEach(function(product) {
+                    // Create card element
+                    const card = document.createElement('div');
+                    card.className = 'col-md-4';
+                    card.innerHTML = `
+                        <div class="card">
+                            <img src="${product.images[0]}" class="card-img-top" alt="${product.title}">
+                            <div class="card-body">
+                                <h5 class="card-title">${product.title}</h5>
+                                <p class="card-text">${product.description}</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    `;
+                    // Append card to the container
+                    cardsContainer.appendChild(card);
+                });
+            })
+            .catch(function(err) {
+                console.error('Error fetching data:', err);
+            });
+    </script>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
