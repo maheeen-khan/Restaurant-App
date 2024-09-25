@@ -1,0 +1,88 @@
+.first-sec {
+    background: url(assests/bg.png);
+    background-attachment: fixed;
+}
+
+.logo {
+    width: 60px !important;
+}
+
+.circle {
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    /* border-radius: 50%; */
+    clip-path: circle(50% at 50% 50%);
+    align-content: center;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.circle h2 {
+    color: rgb(233, 164, 68);
+}
+
+.circle p {
+    color: grey;
+}
+
+.Order {
+    padding: 5px;
+
+}
+
+#search {
+    padding: 6px;
+    border-radius: 5px;
+    border: none;
+}
+
+.navv {
+    backdrop-filter: blur(20px)
+}
+
+.navbar-nav a:hover {
+    text-decoration: overline;
+}
+
+.f-dish {
+    width: 150px;
+    height: 150px;
+
+    animation-name: rot;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+@keyframes rot{
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 360deg;
+    }
+}
+@media screen and (max-width:426px) {
+    .circle {
+        width: 70%;
+        clip-path: none;
+        background: none;
+        backdrop-filter: blur(3px);
+    }
+
+    .circle h2 {
+        color: rgb(251, 211, 154);
+    }
+
+    .circle p {
+        color: rgb(255, 255, 255);
+    }
+
+    .Order {
+        margin-bottom: 20px;
+    }
+
+}
