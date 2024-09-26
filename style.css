@@ -1,6 +1,7 @@
 .first-sec {
     background: url(assests/bg.png);
     background-attachment: fixed;
+
 }
 
 .logo {
@@ -17,7 +18,6 @@
     padding: 30px;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 .circle h2 {
@@ -52,7 +52,7 @@
     height: 150px;
 
     animation-name: rot;
-    animation-duration: 20s;
+    animation-duration: 30s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
 }
