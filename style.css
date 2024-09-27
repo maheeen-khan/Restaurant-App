@@ -68,7 +68,32 @@
     backdrop-filter: blur(5px); 
 
 }
+.mybtn{
+    background-color: var(--myColor) !important;
+    color: white !important;
+}
+.card-title{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+.card{
+    position: relative;
+}
+.card img{
+    width: 200px !important;
+    position: absolute; /* Position image absolutely */
+    top: -100px; /* Move the image above the card */
+    left: 50%; /* Center the image horizontally */
+    transform: translateX(-50%);
+}
+.card{
+    border-top-right-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 80px !important;
+    border-bottom-right-radius: 80px !important;
 
+
+}
 .f-dish {
     width: 150px;
     height: 150px;
