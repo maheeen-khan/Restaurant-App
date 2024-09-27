@@ -108,7 +108,16 @@
     justify-content:space-evenly;
     flex-wrap: wrap;
 }
-
+.sec-img-1 img{
+    border-radius: 80px 0px 80px 0px;
+    border: 2px solid var(--myColor);
+    padding: 14px;
+}
+.sec-img-2 img{
+    border-radius: 0px 80px 0px 80px;
+    border: 2px solid var(--myColor);
+    padding: 14px;
+}
 .f-dish {
     width: 150px;
     height: 150px;
