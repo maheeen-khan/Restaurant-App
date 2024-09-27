@@ -64,9 +64,14 @@
 .sec-3{
     background-color: rgb(5, 5, 30); 
     background-blend-mode: overlay; /* Blend the fixed background with the brown color */
-    opacity: 0.9; 
+    opacity: 1; 
     backdrop-filter: blur(5px); 
 
+}
+
+.head,.about{
+    font-size: 3em;
+    font-weight: bold;
 }
 .mybtn{
     background-color: var(--myColor) !important;
@@ -75,6 +80,7 @@
 .card-title{
     font-family:Georgia, 'Times New Roman', Times, serif;
     text-transform: uppercase;
+    color:  #A05A1C !important;
 }
 .card{
     position: relative;
@@ -92,8 +98,17 @@
     border-bottom-left-radius: 80px !important;
     border-bottom-right-radius: 80px !important;
 
-
 }
+.card:hover{
+    background-color: rgb(228, 224, 224) !important;
+    cursor: pointer;
+}
+.card-cont{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+
 .f-dish {
     width: 150px;
     height: 150px;
