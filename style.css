@@ -118,6 +118,9 @@
     border: 2px solid var(--myColor);
     padding: 14px;
 }
+.card1{
+    border: 3px solid var(--myColor) !important;
+}
 .f-dish {
     width: 150px;
     height: 150px;
