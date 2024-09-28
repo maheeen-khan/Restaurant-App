@@ -3,7 +3,10 @@
     background-attachment: fixed;
 
 }
-
+*{
+    padding: 0px;
+    margin: 0px;
+}
 :root {
     --myColor: rgb(233, 164, 68);
     --darkColor: #3A2C2C;
@@ -259,5 +262,23 @@
     .Order {
         margin-bottom: 20px;
     }
-
+    .eleg{
+        margin-top: 40px !important;
+    }
+    .sec-2{
+        padding: 18px;
+    }
+    .head,.about{
+        font-size: 2em;
+    }
+    .card1{
+        margin-bottom: 40% !important;
+    }
+    #burger{
+        display: none !important;
+    }
+    .sec-fourth input,.sec-fourth .ms-5{
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
 }
