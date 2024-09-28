@@ -108,6 +108,13 @@
     justify-content:space-evenly;
     flex-wrap: wrap;
 }
+.sec-fourth{
+    color: white !important;
+    background-color: var(--darkColor); 
+    background-blend-mode: overlay; /* Blend the fixed background with the brown color */
+    opacity: 1; 
+    backdrop-filter: blur(5px); 
+}
 .sec-img-1 img{
     border-radius: 80px 0px 80px 0px;
     border: 2px solid var(--myColor);
@@ -120,6 +127,13 @@
 }
 .card1{
     border: 3px solid var(--myColor) !important;
+}
+
+#f-name,#l-name{
+    width: 40%;
+}
+#address,#p-no,#email,#items{
+    width: 80%;
 }
 .f-dish {
     width: 150px;

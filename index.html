@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+  
 </head>
 
 <body>
@@ -50,7 +52,7 @@
                 </div>
             </nav>
 
-            <div class="circle text-center animate__animated animate__slideInDown	animate__slower	">
+            <div class="circle text-center " data-aos="fade-up"  data-aos-easing="ease-in">
                 <h2 class="mt-5">Tasty et Délicieux</h2>
                 <p>Le café du coin,an incomparable taste. 12 Rue Nordest, Centre de Paris</p>
 
@@ -61,11 +63,11 @@
             </div>
             <br><br>
             
-<div class="sec-2  mt-5 py-5">
+<div class="sec-2  mt-5 py-5" data-aos="fade-down">
             <h2 class="about text-center mb-3">About</h2>
             <p style="color: white;font-weight:lighter;" class="text-center mb-5">We are special, and here is why</p>
 
-            <div class="row">
+            <div class="row" data-aos="zoom-in-right">
 
                 <div class="col-lg-3 col-md-6 col-sm-12 sec-part ms-auto mt-5 sec-img-1">
                     <img src="./assests/material.png" alt="food material" class="img-fluid">
@@ -79,7 +81,7 @@
                 
             </div> <br> <br>
             
-            <div class="row">
+            <div class="row" data-aos="zoom-in-left">
 
 
                 <div class="col col-lg-4 col-md-6 col-sm-12 align-content-center  ms-auto">
@@ -94,7 +96,7 @@
                 
             </div> <br> <br>
 
-            <div class="row">
+            <div class="row" data-aos="zoom-in-left">
 
                 <div class="col-lg-3 col-md-6 col-sm-12 sec-part ms-auto sec-img-1">
                     <img src="./assests/bg2.png" alt="restaurant" class="img-fluid">
@@ -159,12 +161,58 @@
                 </div>
               </div>
             </div> <!-- card-cont -->
-        </div> 
+        </div>
+        
+        <div class="sec-fourth">
+            <div class="row">
+                <div class="col col-lg-5 col-md-6 col-sm-12">
+                    <img src="./assests/burger.jpeg" alt="burger" class="img-fluid">
+                </div>
+                <div class="col col-lg-7 col-md-6 col-sm-12 bg-success">
+                    <h2 class="text-center my-5">Delivery Details</h2>
+                    <form action="">
+                        <label for="f-name">Full Name</label> <br>
+                        <input type="text" name="f-name" id="f-name" placeholder="First Name">
+                        <input type="text" name="l-name" id="l-name" placeholder="Last Name">
+<br>
+                        <label for="address">
+                            Address </label> <br>
+                            <input type="text" name="address" id="address" placeholder="Street Address">
+                        
+<br>
+                        <label for="p-no">
+                            Phone Number </label> <br>
+                            <input type="number" name="p-no" id="p-no">
+                         <br>
+                        <label for="email">
+                            Email </label> <br>
+                            <input type="email" name="email" id="email">
+<br><br>
+                        <select name="items" id="items">
+                            <option value="">Select item(s)</option>
+                        </select>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
 
         </div>
 
     <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
     <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init(
+        {
+            offset: 250,
+            duration: 1000
+        }
+      );
+    </script>
 </body>
 
 </html>
