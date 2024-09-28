@@ -3,9 +3,10 @@
     background-attachment: fixed;
 
 }
-:root{
+
+:root {
     --myColor: rgb(233, 164, 68);
-    --darkColor:#3A2C2C;
+    --darkColor: #3A2C2C;
 }
 
 .logo {
@@ -50,91 +51,142 @@
 .navbar-nav a:hover {
     text-decoration: overline;
 }
-.about{
+
+.about {
     font-weight: bold;
     color: var(--myColor);
 }
-.sec-2{
-    background-color: var(--darkColor); 
-    background-blend-mode: overlay; /* Blend the fixed background with the brown color */
-    opacity: 0.9; 
-    backdrop-filter: blur(5px); 
 
-}
-.sec-3{
-    background-color: rgb(5, 5, 30); 
-    background-blend-mode: overlay; /* Blend the fixed background with the brown color */
-    opacity: 1; 
-    backdrop-filter: blur(5px); 
+.sec-2 {
+    background-color: var(--darkColor);
+    background-blend-mode: overlay;
+    /* Blend the fixed background with the brown color */
+    opacity: 0.9;
+    backdrop-filter: blur(5px);
 
 }
 
-.head,.about{
+.sec-3 {
+    background-color: rgb(5, 5, 30);
+    background-blend-mode: overlay;
+    /* Blend the fixed background with the brown color */
+    opacity: 1;
+    backdrop-filter: blur(5px);
+
+}
+
+.head,
+.about {
     font-size: 3em;
     font-weight: bold;
 }
-.mybtn{
+
+.mybtn {
     background-color: var(--myColor) !important;
     color: white !important;
+    border-radius: 17px !important;
+    font-size: 14px !important;
 }
-.card-title{
-    font-family:Georgia, 'Times New Roman', Times, serif;
+
+.card-title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     text-transform: uppercase;
-    color:  #A05A1C !important;
+    color: #A05A1C !important;
 }
-.card{
+
+.card {
     position: relative;
 }
-.card img{
+
+.card img {
     width: 200px !important;
-    position: absolute; /* Position image absolutely */
-    top: -100px; /* Move the image above the card */
-    left: 50%; /* Center the image horizontally */
+    position: absolute;
+    /* Position image absolutely */
+    top: -100px;
+    /* Move the image above the card */
+    left: 50%;
+    /* Center the image horizontally */
     transform: translateX(-50%);
 }
-.card{
+
+.card {
     border-top-right-radius: 0px !important;
     border-top-left-radius: 0px !important;
     border-bottom-left-radius: 80px !important;
     border-bottom-right-radius: 80px !important;
 
 }
-.card:hover{
+
+.card:hover {
     background-color: rgb(228, 224, 224) !important;
     cursor: pointer;
 }
-.card-cont{
+
+.card-cont {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.sec-fourth{
+
+.sec-fourth {
     color: white !important;
-    background-color: var(--darkColor); 
-    background-blend-mode: overlay; /* Blend the fixed background with the brown color */
-    opacity: 1; 
-    backdrop-filter: blur(5px); 
+    background-color: var(--darkColor);
+    background-blend-mode: overlay;
+    /* Blend the fixed background with the brown color */
+    opacity: 1;
+    backdrop-filter: blur(5px);
 }
-.sec-img-1 img{
+
+.sec-fourth #burger {
+    width: 350px;
+    height: 400px;
+    border-radius: 50%;
+    border: 2px solid var(--myColor);
+    padding: 15px;
+    box-shadow: 2px 2px 6px var(--myColor), -2px -2px 6px var(--myColor);
+
+    animation-name: imgchanger;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.sec-img-1 img {
     border-radius: 80px 0px 80px 0px;
     border: 2px solid var(--myColor);
     padding: 14px;
 }
-.sec-img-2 img{
+
+.sec-img-2 img {
     border-radius: 0px 80px 0px 80px;
     border: 2px solid var(--myColor);
     padding: 14px;
 }
-.card1{
+
+.card1 {
     border: 3px solid var(--myColor) !important;
 }
 
-#f-name,#l-name{
-    width: 40%;
+#f-name,
+#l-name {
+    width: 39.5%;
 }
-#address,#p-no,#email,#items{
+
+#address,
+#p-no,
+#email,
+#items {
     width: 80%;
 }
+
+.sec-fourth input,
+#items {
+    padding: 5px;
+    border-radius: 12px;
+    border: none;
+
+}
+
 .f-dish {
     width: 150px;
     height: 150px;
@@ -145,14 +197,49 @@
     animation-timing-function: ease-in;
 }
 
-@keyframes rot{
-    from{
+@keyframes imgchanger {
+    0% {
+        background-image: url(assests/burger.jpeg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        /* box-shadow: 2px 2px 4px var(--myColor), -2px -2px 4px var(--myColor); */
+    }
+
+    25%{
+        box-shadow: 3px 3px 8px var(--myColor), -3px -3px 8px var(--myColor);
+        background-image: url(assests/burger.jpeg);
+        background-size:cover;
+
+
+    }
+    50%{
+        background-image: url(assests/pizza.jpeg);
+        background-size:cover;
+        box-shadow: 2px 2px 8px var(--myColor), -2px -2px 8px var(--myColor);
+
+
+    }
+
+    100%{
+     
+        background-image: url(assests/spaghetti.jpeg);
+        background-size:cover;
+        box-shadow: 2px 2px 10px var(--myColor), -2px -2px 10px var(--myColor);
+
+    }
+}
+
+@keyframes rot {
+    from {
         rotate: 0deg;
     }
-    to{
+
+    to {
         rotate: 360deg;
     }
 }
+
 @media screen and (max-width:426px) {
     .circle {
         width: 70%;

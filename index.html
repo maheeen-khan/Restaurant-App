@@ -111,7 +111,7 @@
             </div>
         </div>
 
-         <div class="sec-3"> 
+         <div class="sec-3" data-aos="fade-up"> 
             <div class="sec-3-upper w-50 text-center mx-auto mb-5 py-5">
             <h2 style="color: var(--myColor);" class="head pt-5">OUR FAVOURITE MENU</h2>
             <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim</p>
@@ -119,7 +119,7 @@
 
             <div class="card-cont pt-5 mt-4">
             
-                <div class="card card1 text-center pt-5 pb-3 col-lg-3 col-md-6 col-sm-12" style="width: 18rem;">
+                <div class="card card1 text-center pt-5 pb-3 col-lg-3 col-md-6 col-sm-12" style="width: 18rem;" data-aos="fade-up">
                     <img src="assests/rot2.png" class="card-img-top mx-auto" alt="dish" id="dish">
                     <div class="card-body">
                       <h4 class="card-title mt-5">Grilled Chicken</h4>
@@ -129,7 +129,7 @@
                     </div>
                   </div>
             
-              <div class="card card1 text-center pt-5 pb-3 col-lg-3 col-md-6 col-sm-12" style="width: 18rem;">
+              <div class="card card1 text-center pt-5 pb-3 col-lg-3 col-md-6 col-sm-12" style="width: 18rem;" data-aos="fade-up">
                 <img src="assests/2-removebg-preview.png" class="card-img-top mx-auto" alt="dish" id="dish">
                 <div class="card-body">
                   <h4 class="card-title mt-5">Chicken Rice</h4>
@@ -140,7 +140,7 @@
               </div>
 
               
-            <div class="card card1 text-center pt-5 pb-3 col-lg-3 col-md-6 col-sm-12" style="width: 18rem;">
+            <div class="card card1 text-center pt-5 pb-3 col-lg-3 col-md-6 col-sm-12" style="width: 18rem;" data-aos="fade-up">
                 <img src="assests/rot2.png" class="card-img-top mx-auto" alt="dish" id="dish">
                 <div class="card-body">
                   <h4 class="card-title mt-5">Grilled Chicken</h4>
@@ -151,7 +151,7 @@
               </div>
 
             
-              <div class="card card1 text-center pt-5 pb-3 col-lg-3 col-md-6 col-sm-12" style="width: 18rem;">
+              <div class="card card1 text-center pt-5 pb-3 col-lg-3 col-md-6 col-sm-12" style="width: 18rem;" data-aos="fade-up">
                 <img src="assests/4-removebg-preview.png" class="card-img-top mx-auto" alt="dish" id="dish">
                 <div class="card-body">
                   <h4 class="card-title mt-5">Seafood</h4>
@@ -164,34 +164,37 @@
         </div>
         
         <div class="sec-fourth">
-            <div class="row">
-                <div class="col col-lg-5 col-md-6 col-sm-12">
-                    <img src="./assests/burger.jpeg" alt="burger" class="img-fluid">
+            <div class="row pt-5">
+                <div class="col col-lg-5 col-md-6 col-sm-12 d-flex justify-content-center align-items-center mx-auto my-auto" id="burger">
+                    
                 </div>
-                <div class="col col-lg-7 col-md-6 col-sm-12 bg-success">
-                    <h2 class="text-center my-5">Delivery Details</h2>
+
+
+                <div class="col col-lg-7 col-md-6 col-sm-12 px-5">
+                    <h2 class="text-center my-5 head" style="color: var(--myColor);">Delivery Details</h2>
                     <form action="">
-                        <label for="f-name">Full Name</label> <br>
-                        <input type="text" name="f-name" id="f-name" placeholder="First Name">
-                        <input type="text" name="l-name" id="l-name" placeholder="Last Name">
+                        <label for="f-name" class="ms-5">Full Name</label> <br>
+                        <input type="text" name="f-name" id="f-name" placeholder="First Name" class="mb-3 mt-2 ms-5">
+                        <input type="text" name="l-name" id="l-name" placeholder="Last Name" class="mb-3 mt-2">
 <br>
-                        <label for="address">
+                        <label for="address" class="ms-5">
                             Address </label> <br>
-                            <input type="text" name="address" id="address" placeholder="Street Address">
+                            <input type="text" name="address" id="address" placeholder="Street Address" class="mb-3 mt-2 ms-5">
                         
 <br>
-                        <label for="p-no">
+                        <label for="p-no" class="ms-5">
                             Phone Number </label> <br>
-                            <input type="number" name="p-no" id="p-no">
+                            <input type="number" name="p-no" id="p-no" class="mb-3  mt-2 ms-5">
                          <br>
-                        <label for="email">
+                        <label for="email" class="ms-5">
                             Email </label> <br>
-                            <input type="email" name="email" id="email">
+                            <input type="email" name="email" id="email" class="mb-3 mt-2 ms-5">
 <br><br>
-                        <select name="items" id="items">
+                        <select name="items" id="items" class="ms-5">
                             <option value="">Select item(s)</option>
                         </select>
-
+<div class="text-center">
+                        <button class="btn mybtn mt-5">Confirm Order</button></div>
 
                     </form>
                 </div>
