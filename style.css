@@ -78,12 +78,19 @@
 
 }
 .menu {
-    background-color: rgb(60, 10, 10);
+    background-color: rgb(40, 5, 5);
     background-blend-mode: overlay;
     /* Blend the fixed background with the brown color */
     opacity: 1;
     backdrop-filter: blur(5px);
 
+}
+.search a{
+    text-decoration: none;
+    color: var(--darkColor) !important;
+}
+.search a:hover{
+    color: white;
 }
 .last{
     color: white;
