@@ -187,6 +187,7 @@
 }
 .card2{
     border: 3px solid var(--myColor)!important;
+    border-radius: 12px !important;
 }
 
 .card-cont {
