@@ -77,6 +77,14 @@
     backdrop-filter: blur(5px);
 
 }
+.menu {
+    background-color: rgb(60, 10, 10);
+    background-blend-mode: overlay;
+    /* Blend the fixed background with the brown color */
+    opacity: 1;
+    backdrop-filter: blur(5px);
+
+}
 .last{
     color: white;
 }
@@ -133,12 +141,27 @@
     text-transform: uppercase;
     color: #A05A1C !important;
 }
-
-.card {
+.pricebtn{
+    color: white !important;
+    background-color: var(--myColor) !important;
+    width: 100% !important;
+}
+.seebtn{
+    color: white !important;
+    background-color: var(--myColor) !important;
+    padding-right: 19px !important;
+    padding-left: 19px !important;
+    border-radius: 19px !important;
+}
+.seebtn a{
+    text-decoration: none;
+    color: white !important;
+}
+.card1 {
     position: relative;
 }
 
-.card img {
+.card1 img {
     width: 200px !important;
     position: absolute;
     /* Position image absolutely */
@@ -149,7 +172,7 @@
     transform: translateX(-50%);
 }
 
-.card {
+.card1 {
     border-top-right-radius: 0px !important;
     border-top-left-radius: 0px !important;
     border-bottom-left-radius: 80px !important;
@@ -157,7 +180,7 @@
 
 }
 
-.card:hover {
+.card1:hover {
     background-color: rgb(228, 224, 224) !important;
     cursor: pointer;
 }
@@ -225,6 +248,11 @@
     border-radius: 12px;
     border: none;
 
+}
+
+.Order a{
+    text-decoration: none;
+    color: white !important;
 }
 .last a{
     text-decoration: none;

@@ -28,16 +28,19 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav  text-center ms-auto">
                         <li class="nav-item mx-3">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
                         </li>
                         <li class="nav-item mx-3">
-                            <a class="nav-link" href="#">Menu</a>
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="#menu">Menu</a>
                         </li>
 
                         <li class="nav-item mx-3">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
-                        <button class="btn btn-warning mx-3 Order" type="submit">Order</button>
+                        <button class="btn btn-warning mx-3 Order" type="submit"> <a href="#order">Order</a></button>
 
                         <form class="form-inline">
                             <input type="search" placeholder="Search" aria-label="Search" id="search">
@@ -112,7 +115,7 @@
             </div>
         </div>
 
-        <div class="sec-3 pb-5"  data-aos="fade-up">
+        <div class="sec-3 pb-5"  data-aos="fade-up" id="menu">
             <div class="sec-3-upper w-50 text-center mx-auto mb-5 py-5">
                 <h2 style="color: var(--myColor);" class="head fav pt-5">OUR FAVOURITE MENU</h2>
                 <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -129,7 +132,7 @@
                         <p class="card-text">Lorem, ipsum dolor.</p>
                         <hr>
                         <h3 style="color: #A05A1C;" class="my-4">$36</h3>
-                        <a href="#" class="btn mybtn">Add to cart</a>
+                        <a href="#" class="btn mybtn">Order Now</a>
                     </div>
                 </div>
 
@@ -141,7 +144,7 @@
                         <p class="card-text">Lorem, ipsum dolor.</p>
                         <hr>
                         <h3 style="color: #A05A1C;" class="my-4">$22</h3>
-                        <a href="#" class="btn mybtn">Add to cart</a>
+                        <a href="#" class="btn mybtn">Order Now</a>
                     </div>
                 </div>
 
@@ -154,7 +157,7 @@
                         <p class="card-text">Lorem, ipsum dolor.</p>
                         <hr>
                         <h3 style="color: #A05A1C;" class="my-4">$36</h3>
-                        <a href="#" class="btn mybtn">Add to cart</a>
+                        <a href="#" class="btn mybtn">Order Now</a>
                     </div>
                 </div>
 
@@ -167,13 +170,15 @@
                         <p class="card-text">Lorem, ipsum dolor.</p>
                         <hr>
                         <h3 style="color: #A05A1C;" class="my-4">$20</h3>
-                        <a href="#" class="btn mybtn">Add to cart</a>
+                        <a href="#" class="btn mybtn">Order Now</a>
                     </div>
                 </div>
+
+                <button class="btn seebtn mt-5"><a href="#moremenu">See more</a></button>
             </div> <!-- card-cont -->
         </div>
 
-        <div class="sec-fourth pb-5">
+        <div class="sec-fourth pb-5" id="order">
             <div class="row pt-5 burger">
                 <div class="col col-lg-5 col-md-6 col-sm-12 d-flex justify-content-center align-items-center mx-auto my-auto"
                     id="burger">
@@ -182,7 +187,7 @@
 
 
                 <div class="col col-lg-7 col-md-6 col-sm-12 px-5">
-                    <h2 class="text-center my-5 head" style="color: var(--myColor);">Delivery Details</h2>
+                    <h2 class="text-center my-5 head" style="color: var(--myColor);">Order Now!</h2>
                     <form action="">
                         <label for="f-name" class="ms-5">Full Name</label> <br>
                         <input type="text" name="f-name" id="f-name" placeholder="First Name" class="mb-3 mt-2 ms-5">
@@ -211,6 +216,16 @@
 
                     </form>
                 </div>
+            </div>
+        </div>
+
+
+        <!-- API -->
+
+        <div class="menu py-5">
+            <h2 class="head text-center pb-5" style="color: var(--myColor);" id="moremenu">MENU</h2> <h4><marquee behavior="" direction="left" style="color: var(--myColor); font-style: italic;" class="mb-5">Free delivery across the country!</marquee> </h4>
+            <div id="products" class="d-flex flex-wrap gap-5 justify-content-center align-items-center">
+                
             </div>
         </div>
 
