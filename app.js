@@ -16,7 +16,7 @@ async function getProduct() {
         // }
          var product = document.getElementById('products');
 
-        product.innerHTML += `<div class="card" style="width: 18rem;">
+        product.innerHTML += `<div class="card card2" style="width: 18rem;">
         <img class="card-img-top" src="${res.meals[i].strMealThumb}" alt="food image cap" class="img-fluid">
         <div class="card-body">
             <h5 class="card-title text-center">${res.meals[i].strMeal}</h5>
