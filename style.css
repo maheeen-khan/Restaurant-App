@@ -226,7 +226,12 @@
     border: none;
 
 }
-
+.last a{
+    text-decoration: none;
+}
+.last a:hover{
+    color: var(--myColor) !important;
+}
 .f-dish {
     width: 150px;
     height: 150px;
