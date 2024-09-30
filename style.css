@@ -87,10 +87,10 @@
 }
 .search a{
     text-decoration: none;
-    color: var(--darkColor) !important;
+    color: var(--myColor) !important;
 }
 .search a:hover{
-    color: white;
+    color: white !important;
 }
 .last{
     color: white;
@@ -387,6 +387,10 @@
     }
     #products{
         padding: 25px !important;
+    }
+    .search a{
+        text-decoration: none;
+        color: var(--darkColor) !important;
     }
 }
 @media screen and (min-width:376px) and (max-width:426px){
